@@ -1,9 +1,9 @@
-Distribution_Container_png 
-├── src
-│   ├── output
-│   └── plot.py
-├── Dockerfile
-└── requirements.txt
+    Distribution_Container_png       
+    ├── src     
+    │   ├── output      
+    │   └── plot.py     
+    ├── Dockerfile      
+    └── requirements.txt        
 
 
 1. Перейдем в термина. Для сборки образа по инструкциям в Dockerfile : ```docker build -t distribution_png .```  
