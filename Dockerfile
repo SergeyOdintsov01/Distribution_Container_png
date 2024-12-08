@@ -1,11 +1,7 @@
 FROM python:latest
-
-WORKDIR /src/
-
-COPY ./src ./
-
+WORKDIR /app
+COPY ./src/ ./
+RUN mkdir -p /app/src/output
 COPY ./requirements.txt ./
-
 RUN pip install --no-cache-dir -r requirements.txt
-
-CMD [ "python", "./plot.py" ]
+CMD ["python", "./plot.py"]
