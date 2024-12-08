@@ -1,9 +1,9 @@
 Distribution_Container_png
-|-src
-|   |-output
-|   |-plot.py
-|-Dockerfile
-|_reuirements.txt
+|-- src
+|   |-- output
+|   |-- plot.py
+|-- Dockerfile 
+|-- reuirements.txt
 1. Перейдем в термина. Для сборки образа по инструкциям в Dockerfile : ```docker build -t distribution_png .```  
 * ```build``` сообщает что хотим создать образ
 * ключ ```-t``` указывает на название образа
