@@ -22,3 +22,7 @@
 ```docker run -it --rm -v $PWD/src/output/:/usr/src/app/output  --name=my_first_container my_first_image```
     * docker rm -f $(docker ps -aq)
 
+4. Загрузка образа на GitHub. При отправке образа в Docker Hub необходимо указать имя пользователя как часть имени образа, так как Docker Hub организует репозитории по имени пользователя. Любой репозиторий, созданный под учётной записью, включает имя пользователя в имя образа Docker.
+Поэтому нам необходимо пересобрать наш образ, задав ему имя в формате ```<username>/server_name```, где ```<username>``` — это ваше имя пользователя в профиле на Docker Hub. 
+    * ```docker build -t <username_in_docker_desktop>/some_image .```
+    * Далее делаем push нашего образа на Docker Hub. В аргументах команды необходимо указать имя образа, которым мы хотим поделиться:```$ docker push <username_in_docker_desktop>/some_image```
